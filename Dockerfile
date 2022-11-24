@@ -1,3 +1,4 @@
 FROM maven:latest
-COPY . /codes/
+WORKDIR codes
+COPY . .
 CMD ["mvn", "install"]
